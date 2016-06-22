@@ -57,6 +57,7 @@ class LedMatrix : public node::ObjectWrap {
 		static void Fill(const Nan::FunctionCallbackInfo<v8::Value>& args);
 		static void SetImageBuffer(const Nan::FunctionCallbackInfo<v8::Value>& args);
 		static void Draw(const Nan::FunctionCallbackInfo<v8::Value>& args);
+		static void SetBrightness(const Nan::FunctionCallbackInfo<v8::Value>& args);
 
 		static void Scroll(const Nan::FunctionCallbackInfo<v8::Value>& args);
 		static void UV_Scroll(uv_work_t* work);
