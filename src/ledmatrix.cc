@@ -50,7 +50,7 @@ void LedMatrix::Init(v8::Local<v8::Object> exports) {
 	Nan::SetPrototypeMethod(tpl, "setImageBuffer", SetImageBuffer);
 	Nan::SetPrototypeMethod(tpl, "draw", Draw);
 	Nan::SetPrototypeMethod(tpl, "scroll", Scroll);
-	Nan::SetPrototypeMethod(tpl, "setBrightness", setBrightness);
+	Nan::SetPrototypeMethod(tpl, "setBrightness", SetBrightness);
 
 	constructor.Reset(tpl->GetFunction());
 
