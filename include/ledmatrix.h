@@ -2,7 +2,7 @@
  *	Copyright 2016, Maxime Journaux <journaux.maxime@gmail.com>
  * 	This work is free. You can redistribute it and/or modify it under the
  *	terms of the Do What The Fuck You Want To Public License, Version 2,
- *	as published by Sam Hocevar. 
+ *	as published by Sam Hocevar.
  *	See http://www.wtfpl.net for more details.
  */
 
@@ -38,6 +38,7 @@ class LedMatrix : public node::ObjectWrap {
 		void Clear();
 		void Clear(int x, int y, int w, int h);
 		void Fill(uint8_t r, uint8_t g, uint8_t b);
+		void SetBrightness(uint8_t brightness);
 		void SetImage(Image* img);
 		void Draw(int screenx, int screeny, int width, int height, int imgx, int imgy,
 					bool looph, bool loopv);
